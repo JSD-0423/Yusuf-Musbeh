@@ -1,0 +1,36 @@
+.nav-container1 {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: white;
+}
+.nav-actions-container {
+  display: flex;
+  gap: 0.2rem;
+}
+nav h1 {
+  color: var(--brand-primary);
+  font-size: 1rem;
+}
+.button {
+  display: flex;
+  width: 6.5rem;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+
+  border: 1px solid var(--lines-color);
+}
+.nav-container2 {
+  width: 100%;
+}
+
+.sympol1 img {
+  position: relative;
+  width: 100%;
+  top: -50;
+  z-index: -1;
+}
