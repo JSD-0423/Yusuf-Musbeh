@@ -1,6 +1,29 @@
 body {
   background-color: var(--bg_body, #f0f9ff);
+  color: var(--body-text);
   font-family: "Nunito Sans", sans-serif;
   padding: 0;
   margin: 0;
+  transition: 100ms;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  height: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+footer ion-icon {
+  font-size: 1.5rem;
+  color: var(--heart-color);
+}
+.button {
+  cursor: pointer;
+}
+
+section {
+  transition: 100ms;
 }
