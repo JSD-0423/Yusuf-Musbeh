@@ -1,0 +1,101 @@
+.topic {
+  background-color: #333333;
+  width: 100%;
+  height: 16rem;
+  padding-left: 20rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* box-sizing: border-box; */
+}
+
+.topic-category {
+  color: #03c180;
+}
+.topic-text {
+  width: 33rem;
+  height: 100%;
+  color: white;
+}
+.topic-description {
+  padding-top: 1rem;
+}
+.topic-text ion-icon {
+  color: goldenrod;
+}
+
+.topic-img {
+  position: absolute;
+  height: fit-content;
+  padding: 0.1rem;
+  width: 20rem;
+  background-color: white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  top: 12rem;
+  right: 20rem;
+  color: black;
+}
+.topic-details {
+  padding: 1rem;
+}
+.topic-details span {
+  font-weight: 900;
+}
+.topic img {
+  height: 55%;
+  width: 100%;
+}
+
+.add-favourites-container {
+  border: 1px solid #dddddd;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+}
+
+.add-favourites-button {
+  display: flex;
+  justify-content: space-between;
+  background-color: #03c180;
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.add-favourites-button ion-icon {
+  font-size: 1.4rem;
+}
+
+.unlimited-credits {
+  color: #c0c0c0;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.sub-topics-container {
+  margin-left: 20rem;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  background-color: var(--bg_default);
+  width: fit-content;
+  border-radius: 0.5rem;
+  border: 1px solid var(--lines-color);
+}
+.sub-topics-container h1 {
+  padding-left: 1rem;
+  padding-right: 15rem;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  padding: 1rem;
+  border-top: 1px solid var(--lines-color);
+}
+
+[name="checkmark-circle-outline"] {
+  color: green;
+  font-size: 1.5rem;
+}

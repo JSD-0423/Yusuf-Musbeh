@@ -5,6 +5,7 @@ body {
   padding: 0;
   margin: 0;
   transition: 100ms;
+  overflow-x: hidden;
 }
 
 footer {
@@ -28,6 +29,9 @@ section {
   transition: 200ms;
 }
 
+main {
+  height: fit-content;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
