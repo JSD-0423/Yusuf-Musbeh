@@ -6,12 +6,13 @@
     <!-- CSS files -->
     <link rel="stylesheet" href="../CSS/all.css" />
     <link rel="stylesheet" href="../CSS/variables.css" />
+    <link rel="stylesheet" href="../CSS/navigationBar.css" />
     <link rel="stylesheet" href="../CSS/home.css" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
     <title>Document</title>
@@ -23,7 +24,7 @@
           <h1>Web Topics</h1>
           <div class="nav-actions-container">
             <div class="dark-mode-button button">
-              <ion-icon name="moon-outline"></ion-icon>
+              <ion-icon name="moon-outline" id="moonIcon"></ion-icon>
               <span>Dark Mode</span>
             </div>
             <div class="favorites-button button">
@@ -32,12 +33,791 @@
             </div>
           </div>
         </div>
-        <div class="sympol1">
-          <img src="../assets/nav-sympol.svg" alt="" />
-        </div>
       </nav>
-      <main></main>
+
+      <div class="welcome-container">
+        <div>
+          <div class="welcome-statement-1">Welcome to our website!</div>
+          <div class="welcome-statement-2">
+            We have a new design that's fresh, modern, and easy to use
+          </div>
+        </div>
+      </div>
     </header>
+    <main>
+      <div class="search-container">
+        <div class="search-input-container">
+          <ion-icon name="search-outline"></ion-icon>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search the website..."
+          />
+        </div>
+        <div class="search-bar-actions">
+          <div class="drop-down-menu">
+            <label for="sort">Sort by:</label>
+            <select name="sort" id="sort">
+              <option value="default" selected>Default</option>
+              <option value="design">Design</option>
+              <option value="back-end">Back-End</option>
+              <option value="front-end">Front-End</option>
+            </select>
+          </div>
+          <div class="drop-down-menu">
+            <label for="filter">Filter by:</label>
+            <select name="filter" id="filter">
+              <option value="default" selected>Default</option>
+              <option value="design">Design</option>
+              <option value="back-end">Back-End</option>
+              <option value="front-end">Front-End</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <h1>"24" Web Topics Found</h1>
+      <section class="topics">
+        <article class="topic">
+          <img src="../assets/html.png" alt="topic" srcset="" />
+          <section class="topic-info">
+            <section class="topic-name">
+              <p class="category">Web Development Languages</p>
+              <p class="topic-title">HTML</p>
+            </section>
+            <div class="topic-card-footer">
+              <section class="topic-rate">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </section>
+              <section class="topic-author">Author: Sarah Smith</section>
+            </section>
+       
+        </article>
+        <article class="topic">
+          <img src="../assets/css.webp" alt="topic" srcset="" />
+      
+            <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+         
+        </article>
+        <article class="topic">
+          <img src="../assets/javascript.jpg" alt="topic" srcset="" />
+          <section class="topic-info">
+            <section class="topic-name">
+              <p class="category">Web Development Languages</p>
+              <p class="topic-title">HTML</p>
+            </section>
+            <div class="topic-card-footer">
+              <section class="topic-rate">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </section>
+              <section class="topic-author">Author: Sarah Smith</section>
+            </section>
+        </article>
+
+        <article class="topic">
+          <img src="../assets/jquery.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+        <article class="topic">
+          <img src="../assets/angular.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+        <article class="topic">
+          <img src="../assets/react.webp" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+        <article class="topic">
+          <img src="../assets/vuejs.jpeg" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+        <article class="topic">
+          <img src="../assets/nodejs.webp" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+        <article class="topic">
+          <img src="../assets/expressjs.webp" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+        <article class="topic">
+          <img src="../assets/ruby.jpeg" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+    
+
+        <article class="topic">
+          <img src="../assets/django.jpeg" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+        <article class="topic">
+          <img src="../assets/flask.webp" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+        <article class="topic">
+          <img src="../assets/sql.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+
+        <article class="topic">
+          <img src="../assets/nosql.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+        <article class="topic">
+          <img src="../assets/restapi.jpeg" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+        <article class="topic">
+          <img src="../assets/graphql.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+
+        <article class="topic">
+          <img src="../assets/oauth.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+        <article class="topic">
+          <img src="../assets/json.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+        <article class="topic">
+          <img src="../assets/ajax.gif" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+        <article class="topic">
+          <img src="../assets/websockets.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+        <article class="topic">
+          <img src="../assets/responsive.gif" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+        <article class="topic">
+          <img src="../assets/accessibility.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+
+
+        <article class="topic">
+          <img src="../assets/ux.jpeg" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+        <article class="topic">
+          <img src="../assets/ui.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+        <article class="topic">
+          <img src="../assets/design-systems.jpeg" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+        <article class="topic">
+          <img src="../assets/performance.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+        <article class="topic">
+          <img src="../assets/cross-browser.jpeg" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+        <article class="topic">
+          <img src="../assets/seo.jpeg" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+        <article class="topic">
+          <img src="../assets/web-security.jpeg" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+        <article class="topic">
+          <img src="../assets/testing.jpeg" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+        <article class="topic">
+          <img src="../assets/ci-cd.jpeg" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+        <article class="topic">
+          <img src="../assets/devops.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+        <article class="topic">
+          <img src="../assets/cloud.jpeg" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+        <article class="topic">
+          <img src="../assets/docker.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+        <article class="topic">
+          <img src="../assets/microservices.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+        <article class="topic">
+          <img src="../assets/pwa.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+        <article class="topic">
+          <img src="../assets/accessibility.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+        <article class="topic">
+          <img src="../assets/cms.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+        <article class="topic">
+          <img src="../assets/analytics.png" alt="topic" srcset="" />
+          <section class="topic-info">
+              <section class="topic-name">
+                <p class="category">Web Development Languages</p>
+                <p class="topic-title">HTML</p>
+              </section>
+              <div class="topic-card-footer">
+                <section class="topic-rate">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </section>
+                <section class="topic-author">Author: Sarah Smith</section>
+              </section>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+   <p>Developed with</p>
+   <ion-icon name="heart"></ion-icon>
+   <p> &copy; 2023</p>
+    </footer>
+
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>
