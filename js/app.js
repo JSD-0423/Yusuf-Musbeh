@@ -6,6 +6,12 @@ const favoritesButton = document.querySelector(".favorites-button");
 const favoritesContainer = document.querySelector(".favourites");
 const favoritesIcon = document.getElementById("favoritesIcon");
 
+const topics = document.querySelectorAll(".topic");
+
+topics.forEach((topic) =>
+  topic.addEventListener("click", () => (window.location.href = "details.html"))
+);
+
 function switchTheme() {
   currentTheme = document.documentElement.getAttribute("data-theme");
   console.log(currentTheme);
