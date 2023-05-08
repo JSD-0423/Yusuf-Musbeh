@@ -50,9 +50,10 @@ nav h1 {
   align-items: center;
   justify-content: center;
   padding-bottom: 1.5rem;
-  padding-left: 1rem;
-  background-color: var(--bg_default);
+  padding-left: -1rem;
+  background-color: transparent;
   color: var(--body-text);
+  margin-top: -3rem;
 }
 .welcome-statement-1 {
   color: var(--brand-secondary);
@@ -67,4 +68,39 @@ nav h1 {
 
 .nav-actions-container span {
   margin-left: 0.5rem;
+}
+
+.symbol {
+  width: 100%;
+  height: 6rem;
+  overflow: hidden;
+}
+
+.container1 {
+  position: relative;
+  /* background: rgb(7, 104, 172); */
+  background: linear-gradient(
+    90deg,
+    rgba(7, 104, 172, 1) 0%,
+    rgba(6, 134, 157, 1) 34%,
+    rgba(3, 193, 128, 1) 100%
+  );
+  height: 138%;
+  transform: skewY(357deg);
+  margin-right: -1rem;
+  top: -238px;
+}
+
+.container2 {
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(7, 104, 172, 1) 0%,
+    rgba(4, 174, 137, 1) 39%,
+    rgba(3, 193, 128, 1) 100%
+  );
+  height: 138%;
+  transform: skewY(-357deg);
+  margin-right: -1rem;
+  top: -111px;
 }
