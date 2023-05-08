@@ -34,7 +34,7 @@ function toggleFavoritesContainer() {
     favoritesIcon.style.color = "var(--heart-color)";
     favoritesIcon.setAttribute("name", "heart");
   } else {
-    favoritesContainer.style.bottom = "-1000";
+    favoritesContainer.style.bottom = "-300";
     favoritesIcon.style.color = "var(--text-body)";
 
     favoritesIcon.setAttribute("name", "heart-outline");
