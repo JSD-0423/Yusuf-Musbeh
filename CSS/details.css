@@ -1,18 +1,70 @@
+/* Mobile view */
+@media only screen and (max-width: 1200px) {
+  .sub-topics-container h1 {
+    padding-right: 0;
+  }
+  .topic-text {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .sub-topics-container {
+    margin-left: 0;
+    width: 100%;
+  }
+  .topic-img {
+    position: static;
+    margin-top: 1rem;
+  }
+  .topic {
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+}
+
+/* desktop view */
+
+@media only screen and (min-width: 1201px) {
+  .sub-topics-container h1 {
+    padding-right: 15rem;
+  }
+  .sub-topics-container {
+    width: fit-content;
+  }
+  .topic {
+    padding-left: 20rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .topic-img {
+    position: absolute;
+    top: 0rem;
+    right: -26rem;
+  }
+  .topic-text {
+    width: 33rem;
+
+    position: relative;
+  }
+  .sub-topics-container {
+    margin-left: 20rem;
+  }
+}
+
 .topic {
   background-color: #333333;
   width: 100%;
-  height: 16rem;
-  padding-left: 20rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  /* box-sizing: border-box; */
+  height: fit-content;
 }
 
 .topic-category {
   color: #03c180;
 }
 .topic-text {
-  width: 33rem;
   height: 100%;
   color: white;
 }
@@ -24,15 +76,13 @@
 }
 
 .topic-img {
-  position: absolute;
   height: fit-content;
   padding: 0.1rem;
   width: 20rem;
   background-color: white;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-  top: 12rem;
-  right: 20rem;
+
   color: black;
 }
 .topic-details {
@@ -71,17 +121,14 @@
   font-weight: 100;
 }
 .sub-topics-container {
-  margin-left: 20rem;
   padding: 1rem 0;
   margin-top: 2rem;
   background-color: var(--bg_default);
-  width: fit-content;
   border-radius: 0.5rem;
   border: 1px solid var(--lines-color);
 }
 .sub-topics-container h1 {
   padding-left: 1rem;
-  padding-right: 15rem;
 }
 ul {
   margin: 0;

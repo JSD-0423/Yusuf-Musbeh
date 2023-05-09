@@ -33,11 +33,16 @@ function toggleFavoritesContainer() {
     favoritesContainer.style.bottom = "0";
     favoritesIcon.style.color = "var(--heart-color)";
     favoritesIcon.setAttribute("name", "heart");
+    favoritesIcon.style.transform = "rotate(20deg)";
+    setTimeout(() => (favoritesIcon.style.transform = "rotate(-20deg)"), 100);
+
+    setTimeout(() => (favoritesIcon.style.transform = "rotate(0deg)"), 100);
   } else {
     favoritesContainer.style.bottom = "-300";
     favoritesIcon.style.color = "var(--text-body)";
-
     favoritesIcon.setAttribute("name", "heart-outline");
+    favoritesIcon.style.transform = "rotate(20deg)";
+    setTimeout(() => (favoritesIcon.style.transform = "rotate(0deg)"), 100);
   }
 }
 

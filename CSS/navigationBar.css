@@ -30,8 +30,7 @@ nav h1 {
 }
 .button {
   display: flex;
-  /* width: 6.5rem;
-   */
+
   justify-content: space-around;
   align-items: center;
 
@@ -50,9 +49,9 @@ nav h1 {
   align-items: center;
   justify-content: center;
   padding-bottom: 1.5rem;
-  padding-left: -1rem;
   background-color: transparent;
   color: var(--body-text);
+  margin-left: 1rem;
   margin-top: -3rem;
 }
 .welcome-statement-1 {

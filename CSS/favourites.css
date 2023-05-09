@@ -9,6 +9,10 @@
   z-index: 1;
 }
 
+#favoritesIcon {
+  font-size: 1rem;
+}
+
 .topic-favourites {
   display: flex;
   flex-direction: column;
