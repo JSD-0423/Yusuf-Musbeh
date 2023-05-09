@@ -62,7 +62,7 @@
 }
 
 .topic-category {
-  color: #03c180;
+  color: var(--brand-secondary);
 }
 .topic-text {
   height: 100%;
@@ -70,9 +70,6 @@
 }
 .topic-description {
   padding-top: 1rem;
-}
-.topic-text ion-icon {
-  color: goldenrod;
 }
 
 .topic-img {
@@ -105,7 +102,7 @@
 .add-favourites-button {
   display: flex;
   justify-content: space-between;
-  background-color: #03c180;
+  background-color: var(--brand-secondary);
   color: white;
   padding: 1rem 2rem;
   font-weight: 500;
@@ -143,6 +140,10 @@ li {
 }
 
 [name="checkmark-circle-outline"] {
-  color: green;
+  color: var(--brand-secondary);
   font-size: 1.5rem;
+}
+
+.add-favourites-button {
+  cursor: pointer;
 }

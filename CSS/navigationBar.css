@@ -42,6 +42,11 @@ nav h1 {
 .nav-container2 {
   width: 100%;
 }
+.dark-mode-button:hover,
+.favorites-button:hover {
+  background-color: var(--brand-primary);
+  color: white;
+}
 
 .welcome-container {
   position: relative;
