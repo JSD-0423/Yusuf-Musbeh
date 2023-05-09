@@ -22,7 +22,6 @@ function switchTheme() {
 
 function applyTheme() {
   let theme = getTheme();
-  console.log(typeof theme);
   if (theme == "true") {
     document.documentElement.setAttribute("data-theme", "dark");
     moonIcon.setAttribute("name", "moon");
@@ -57,8 +56,8 @@ function toggleFavoritesContainer() {
 function getTheme() {
   let theme = localStorage.getItem("darkMood");
   if (!theme) {
-    localStorage.setItem("darkMood", true);
-    theme = true;
+    localStorage.setItem("darkMood", false);
+    theme = false;
   }
   return theme;
 }
