@@ -3,7 +3,7 @@ const themeText = document.querySelector(".dark-mode-button span");
 const moonIcon = document.getElementById("moonIcon");
 
 const favoritesButton = document.querySelector(".favorites-button");
-const favoritesContainer = document.querySelector(".favourites");
+const favoritesContainer = document.querySelector(".favorites");
 const favoritesIcon = document.getElementById("favoritesIcon");
 
 applyTheme();

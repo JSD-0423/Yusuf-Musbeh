@@ -1,4 +1,4 @@
-.favourites {
+.favorites {
   position: fixed;
   background-color: var(--bg_default);
   width: 100%;
@@ -13,7 +13,7 @@
   font-size: 1rem;
 }
 
-.topic-favourites {
+.topic-favorites {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -25,23 +25,23 @@
 
   box-shadow: rgba(99, 99, 99, 0.09) 0px 2px 8px 0px;
 }
-.topic-favourites ion-icon {
+.topic-favorites ion-icon {
   color: goldenrod;
 }
-.topic-favourites p,
+.topic-favorites p,
 h1 {
   margin: 0;
 }
-.favourites h1 {
+.favorites h1 {
   font-size: 1.2rem;
   font-weight: 900;
 }
-.topic-favourites img {
+.topic-favorites img {
   border-radius: 0.7rem 0.7rem 0rem 0rem;
   background-color: white;
 }
 
-.topics-favouries {
+.topics-favorites {
   display: flex;
   flex-direction: row;
   gap: 1rem;

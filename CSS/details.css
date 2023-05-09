@@ -93,13 +93,13 @@
   width: 100%;
 }
 
-.add-favourites-container {
+.add-favorites-container {
   border: 1px solid #dddddd;
   padding: 0.5rem 1.5rem;
   text-align: center;
 }
 
-.add-favourites-button {
+.add-favorites-button {
   display: flex;
   justify-content: space-between;
   background-color: var(--brand-secondary);
@@ -108,7 +108,7 @@
   font-weight: 500;
   font-size: 1.1rem;
 }
-.add-favourites-button ion-icon {
+.add-favorites-button ion-icon {
   font-size: 1.4rem;
 }
 
@@ -144,6 +144,6 @@ li {
   font-size: 1.5rem;
 }
 
-.add-favourites-button {
+.add-favorites-button {
   cursor: pointer;
 }
