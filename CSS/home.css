@@ -9,6 +9,9 @@
   .search-bar-actions > div:first-child {
     border-right: 1px solid var(--lines-color);
   }
+  .topic {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 801px) {
   .search-container {
@@ -16,6 +19,9 @@
   }
   .drop-down-menu {
     border-left: 1px solid var(--lines-color);
+  }
+  .topic {
+    width: 16.5rem;
   }
 }
 h1 {
@@ -101,7 +107,6 @@ main {
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--bg_default);
-  width: 16.5rem;
   height: 20rem;
   cursor: pointer;
   border-radius: 0.7rem;
