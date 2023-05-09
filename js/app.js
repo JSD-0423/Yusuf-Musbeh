@@ -6,16 +6,24 @@ const favoritesButton = document.querySelector(".favorites-button");
 const favoritesContainer = document.querySelector(".favourites");
 const favoritesIcon = document.getElementById("favoritesIcon");
 
-const topics = document.querySelectorAll(".topic");
-
-topics.forEach((topic) =>
-  topic.addEventListener("click", () => (window.location.href = "details.html"))
-);
+applyTheme();
 
 function switchTheme() {
-  currentTheme = document.documentElement.getAttribute("data-theme");
-  console.log(currentTheme);
-  if (currentTheme == "light" || currentTheme == null) {
+  currentTheme = getTheme();
+
+  if (currentTheme == "true") {
+    localStorage.setItem("darkMood", false);
+    applyTheme();
+  } else {
+    localStorage.setItem("darkMood", true);
+    applyTheme();
+  }
+}
+
+function applyTheme() {
+  let theme = getTheme();
+  console.log(typeof theme);
+  if (theme == "true") {
     document.documentElement.setAttribute("data-theme", "dark");
     moonIcon.setAttribute("name", "moon");
     if (themeText != null) themeText.innerHTML = "Light Mode";
@@ -44,6 +52,15 @@ function toggleFavoritesContainer() {
     favoritesIcon.style.transform = "rotate(20deg)";
     setTimeout(() => (favoritesIcon.style.transform = "rotate(0deg)"), 100);
   }
+}
+
+function getTheme() {
+  let theme = localStorage.getItem("darkMood");
+  if (!theme) {
+    localStorage.setItem("darkMood", true);
+    theme = true;
+  }
+  return theme;
 }
 
 themeButton.addEventListener("click", switchTheme);
