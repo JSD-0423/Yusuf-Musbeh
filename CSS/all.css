@@ -1,11 +1,14 @@
 body {
   background-color: var(--bg_body, #f0f9ff);
   color: var(--body-text);
-  font-family: "Nunito Sans", sans-serif;
   padding: 0;
   margin: 0;
   transition: 100ms;
   overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 footer {
