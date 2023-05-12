@@ -116,7 +116,8 @@ const topics = [
   },
   {
     image: "../assets/ci-cd.jpeg",
-    title: "Continuous Integration",
+    title:
+      "Continuous Integration/Continuous Integration Continuous Integration/Continuous Integration ",
     author: "Madison Davis",
   },
   {
@@ -177,10 +178,11 @@ function displayTopics(topics) {
     const topicContainer = document.createElement("article");
     topicContainer.classList.add("topic");
 
-    topicContainer.innerHTML = `<img src="${topic.image}" alt="topic" srcset="" />
+    topicContainer.innerHTML = `
+    <img src="${topic.image}" alt="topic" srcset="" />
     <section class="topic-info">
       <section class="topic-name">
-        <p class="category">Category</p>
+        <p class="category">Category Category Category Category Category Category Category Category Category Category</p>
         <p class="topic-title">${topic.title}</p>
       </section>
       <div class="topic-card-footer">

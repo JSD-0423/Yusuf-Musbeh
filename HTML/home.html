@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <title>Home Page</title>
@@ -21,8 +21,8 @@
   <body>
     <header>
       <nav>
-        <div class="nav-container1">
-          <a href="home.html"><h1>Web Topics</h1></a>
+        <div class="nav-container1 main-padding">
+          <h1>Web Topics</h1>
           <div class="nav-actions-container">
             <div class="dark-mode-button button">
               <ion-icon name="moon-outline" id="moonIcon"></ion-icon>
@@ -35,9 +35,12 @@
           </div>
         </div>
       </nav>
-      <div class="symbol">
-        <div class="container2"></div>
-        <div class="container1"></div>
+    </header>
+
+    <div class="welcome-section">
+      <div class="shape">
+        <div class="shape1"></div>
+        <div class="shape2"></div>
       </div>
       <div class="welcome-container">
         <div>
@@ -47,8 +50,9 @@
           </div>
         </div>
       </div>
-    </header>
-    <main>
+    </div>
+
+    <main class="main-padding">
       <div class="search-container">
         <div class="search-input-container">
           <ion-icon name="search-outline"></ion-icon>
@@ -80,7 +84,7 @@
         </div>
       </div>
 
-      <h1>"24" Web Topics Found</h1>
+      <span>"24" Web Topics Found</span>
       <section class="topics"></section>
     </main>
     <section class="favorites">
