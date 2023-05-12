@@ -32,6 +32,7 @@ header {
 nav h1 {
   color: var(--brand-primary);
   font-size: 1rem;
+  font-weight: 600;
 }
 .button {
   display: flex;

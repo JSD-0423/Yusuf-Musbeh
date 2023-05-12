@@ -16,10 +16,8 @@
 .topic-favorites {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   background-color: var(--bg_default);
   width: 8rem;
-  height: 6.5rem;
   border-radius: 0.7rem;
   margin-top: 1rem;
 

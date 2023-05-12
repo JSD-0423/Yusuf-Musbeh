@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap"
       rel="stylesheet"
     />
     <title>Home Page</title>
@@ -30,7 +30,7 @@
             </div>
             <div class="favorites-button button">
               <ion-icon name="heart-outline" id="favoritesIcon"></ion-icon>
-              <span>Favorites</span>
+              <span>Favourites</span>
             </div>
           </div>
         </div>
@@ -54,13 +54,9 @@
 
     <main class="main-padding">
       <div class="search-container">
-        <div class="search-input-container">
+        <div class="search-input">
           <ion-icon name="search-outline"></ion-icon>
-          <input
-            type="text"
-            class="search-input"
-            placeholder="Search the website..."
-          />
+          <input type="text" placeholder="Search the website..." />
         </div>
         <div class="search-bar-actions">
           <div class="drop-down-menu">
@@ -88,8 +84,23 @@
       <section class="topics"></section>
     </main>
     <section class="favorites">
-      <h1>My Favorites Topics</h1>
-      <section class="topics-favorites"></section>
+      <h1>My Favourites Topics</h1>
+
+      <section class="topics-favorites">
+        <section class="topic-favorites">
+          <img src="../assets/react.webp" alt="topic" srcset="" />
+          <section class="topic-info">
+            <p class="topic-title">HTML</p>
+            <section class="topic-rate">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </section>
+          </section>
+        </section>
+      </section>
     </section>
     <footer>
       <p>Developed with</p>

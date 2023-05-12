@@ -1,3 +1,4 @@
+/* Mobile View */
 @media only screen and (max-width: 800px) {
   .search-container {
     flex-wrap: wrap;
@@ -5,13 +6,14 @@
   .search-bar-actions {
     width: 100%;
   }
-  .search-input-container {
+  .search-input {
     border-bottom: 1px solid var(--lines-color);
   }
   .search-bar-actions > div:first-child {
     border-right: 1px solid var(--lines-color);
   }
 }
+/* Desktop View */
 @media only screen and (min-width: 801px) {
   .drop-down-menu {
     border-left: 1px solid var(--lines-color);
@@ -25,6 +27,7 @@ select {
   font-weight: 600;
   color: var(--body-text);
 }
+
 .search-container {
   display: flex;
   justify-content: space-between;
@@ -33,13 +36,13 @@ select {
   margin: 1.5rem 0;
   border-radius: 0.7rem;
 }
-.search-input-container {
+.search-input {
   display: flex;
   align-items: center;
   padding: 0 0.5rem;
   flex-grow: 2;
 }
-.search-input {
+.search-input input {
   width: 100%;
   margin: 0;
   border: none;
@@ -132,7 +135,4 @@ main span {
 }
 .topic ion-icon {
   color: goldenrod;
-}
-main {
-  height: fit-content;
 }
