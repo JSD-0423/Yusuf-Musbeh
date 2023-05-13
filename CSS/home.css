@@ -8,13 +8,18 @@
   }
   .search-input {
     border-bottom: 1px solid var(--lines-color);
+    padding-block: 0.5rem;
   }
   .search-bar-actions > div:first-child {
     border-right: 1px solid var(--lines-color);
+    padding-bottom: 0.9rem;
   }
 }
 /* Desktop View */
 @media only screen and (min-width: 801px) {
+  .search-input {
+    padding-block: 0;
+  }
   .drop-down-menu {
     border-left: 1px solid var(--lines-color);
   }
@@ -39,17 +44,19 @@ select {
 .search-input {
   display: flex;
   align-items: center;
-  padding: 0 0.5rem;
+  padding-left: 1rem;
   flex-grow: 2;
 }
 .search-input input {
   width: 100%;
   margin: 0;
   border: none;
-  outline: none;
-  padding-block: 1rem;
-  padding-left: 0.4rem;
-  color: var(--body-text);
+  outline-color: var(--brand-primary);
+  padding-block: 0.5rem;
+  padding-left: 2rem;
+}
+.search-input ion-icon {
+  margin-right: -1.3rem;
 }
 .search-bar-actions {
   display: flex;
@@ -95,6 +102,7 @@ main span {
   background-color: white;
   height: 55%;
   width: 100%;
+  object-fit: cover;
 }
 
 .topic-info {
