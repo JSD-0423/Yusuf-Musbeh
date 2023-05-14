@@ -20,7 +20,7 @@ header {
 }
 .nav-container1 {
   display: flex;
-  padding-block: 1rem;
+  padding-block: 1.1rem;
   justify-content: space-between;
   align-items: center;
   background-color: var(--bg_default);
@@ -78,7 +78,7 @@ nav h1 {
   background-color: var(--bg_default);
   height: 6rem;
   box-sizing: content-box;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.2rem;
   overflow: hidden;
 }
 
