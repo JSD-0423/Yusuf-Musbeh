@@ -1,3 +1,17 @@
+/* mobile view */
+@media only screen and (max-width: 800px) {
+  .main-padding {
+    padding: 0 1rem;
+  }
+}
+
+/* Desktop View */
+@media only screen and (min-width: 801px) {
+  .main-padding {
+    padding: 0 3.5rem;
+  }
+}
+
 body {
   background-color: var(--bg_body, #f0f9ff);
   color: var(--body-text);
@@ -10,9 +24,7 @@ body {
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
 }
-.main-padding {
-  padding: 0 3.5rem;
-}
+
 footer {
   display: flex;
   justify-content: center;

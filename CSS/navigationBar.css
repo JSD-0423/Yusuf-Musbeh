@@ -1,12 +1,31 @@
 /* mobile view */
 @media only screen and (max-width: 800px) {
+  .welcome-container {
+    margin-top: -5.5rem;
+  }
   .nav-actions-container span {
     display: none;
+  }
+  .shape2 {
+    top: -251px;
+  }
+  .shape1 {
+    top: -117px;
   }
 }
 
 /* desktop view */
 @media only screen and (min-width: 801px) {
+  .welcome-container {
+    margin-top: -4.5rem;
+  }
+  .shape2 {
+    top: -238px;
+  }
+
+  .shape1 {
+    top: -111px;
+  }
 }
 nav {
   position: relative;
@@ -57,7 +76,6 @@ nav h1 {
   justify-content: center;
   color: var(--body-text);
   margin-left: 1rem;
-  margin-top: -4.5rem;
 }
 .welcome-statement-1 {
   color: var(--brand-secondary);
@@ -93,7 +111,6 @@ nav h1 {
   height: 138%;
   transform: skewY(357deg);
   margin-right: -1rem;
-  top: -238px;
 }
 
 .shape1 {
@@ -107,7 +124,6 @@ nav h1 {
   height: 138%;
   transform: skewY(-357deg);
   margin-right: -1rem;
-  top: -111px;
 }
 a {
   text-decoration: none;
