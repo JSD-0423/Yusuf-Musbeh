@@ -39,9 +39,9 @@ header {
 }
 .nav-container1 {
   display: flex;
-  padding-block: 1.1rem;
   justify-content: space-between;
   align-items: center;
+  height: 4.4rem;
   background-color: var(--bg_default);
 }
 .nav-actions-container {
