@@ -80,6 +80,7 @@ select {
 .drop-down-menu select {
   border: none;
   outline: none;
+  margin-left: -0.2rem;
 }
 
 main span {
@@ -134,7 +135,7 @@ main span {
 }
 
 .topic-title {
-  font-weight: 900;
+  font-weight: 700;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;

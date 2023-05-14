@@ -57,7 +57,7 @@ nav h1 {
   justify-content: center;
   color: var(--body-text);
   margin-left: 1rem;
-  margin-top: -5rem;
+  margin-top: -4.5rem;
 }
 .welcome-statement-1 {
   color: var(--brand-secondary);
@@ -84,7 +84,6 @@ nav h1 {
 
 .shape2 {
   position: relative;
-  /* background: rgb(7, 104, 172); */
   background: linear-gradient(
     90deg,
     rgba(7, 104, 172, 1) 0%,
