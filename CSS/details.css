@@ -27,7 +27,6 @@
 }
 
 /* desktop view */
-
 @media only screen and (min-width: 1201px) {
   .sub-topics-container h1 {
     padding-right: 20rem;
@@ -126,7 +125,7 @@
 .sub-topics-container {
   margin-top: 2rem;
   background-color: var(--bg_default);
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   border: 1px solid var(--lines-color);
 }
 .sub-topics-container h1 {
