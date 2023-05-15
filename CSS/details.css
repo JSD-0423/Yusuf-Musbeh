@@ -4,7 +4,6 @@
     padding-right: 0;
   }
   .topic-text {
-    position: static;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -17,10 +16,12 @@
     width: 100%;
   }
   .topic-img {
-    position: static;
     margin-top: 1rem;
+    width: 100%;
   }
   .topic {
+    display: flex;
+    justify-content: center;
     padding: 1rem;
     box-sizing: border-box;
   }
@@ -45,11 +46,11 @@
   .topic-img {
     position: absolute;
     top: 0rem;
+    max-width: 20rem;
     right: -22rem;
   }
   .topic-text {
     position: relative;
-    width: 33rem;
   }
 }
 
@@ -66,6 +67,7 @@
 .topic-text {
   height: 100%;
   color: white;
+  max-width: 33.3rem;
 }
 .topic-description {
   padding-top: 1rem;
@@ -74,7 +76,6 @@
 .topic-img {
   height: fit-content;
   padding: 0.1rem;
-  width: 20rem;
   background-color: white;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
@@ -108,16 +109,16 @@
   align-items: center;
   background-color: var(--brand-secondary);
   color: white;
-  padding: 1rem 1rem;
+  padding: 0.8rem 0.8rem;
   font-weight: 400;
   font-size: 1.5rem;
 }
 .add-favorites-button ion-icon {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 .unlimited-credits {
-  color: #c0c0c0;
+  color: #7a7979;
   font-size: 0.8rem;
   font-weight: 100;
   text-align: center;
