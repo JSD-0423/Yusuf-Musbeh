@@ -68,7 +68,7 @@ nav h1 {
   color: white;
 }
 .welcome-section {
-  height: 8rem;
+  height: 7.2rem;
 }
 
 .welcome-container {
@@ -125,7 +125,4 @@ nav h1 {
   height: 138%;
   transform: skewY(-357deg);
   margin-right: -1rem;
-}
-a {
-  text-decoration: none;
 }

@@ -56,6 +56,11 @@ main {
 ion-icon {
   transition: 200ms;
 }
+[name="star"],
+[name="star-outline"] {
+  color: goldenrod;
+  margin: -2px;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
