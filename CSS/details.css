@@ -11,10 +11,6 @@
     text-align: center;
     flex-direction: column;
   }
-  .sub-topics-container {
-    margin-left: 0;
-    width: 100%;
-  }
   .topic-img {
     margin-top: 1rem;
     width: 100%;
@@ -105,7 +101,8 @@
 
 .add-favorites-button {
   display: flex;
-  justify-content: space-between;
+  gap: 0.4rem;
+  justify-content: center;
   align-items: center;
   background-color: var(--brand-secondary);
   color: white;
@@ -113,6 +110,7 @@
   font-weight: 400;
   font-size: 1.5rem;
 }
+
 .add-favorites-button ion-icon {
   font-size: 1.8rem;
 }
