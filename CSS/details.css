@@ -3,6 +3,9 @@
   .sub-topics-container h1 {
     padding-right: 0;
   }
+  .sub-topics-container {
+    margin-inline: 1rem;
+  }
   .topic-text {
     width: 100%;
     display: flex;
