@@ -80,6 +80,7 @@ select {
   border: none;
   outline: none;
   margin-left: -0.2rem;
+  background-color: var(--bg_default);
 }
 
 main span {
